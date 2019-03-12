@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+{% endblock %}
+
+
+{% block body %}
+
+
+<html>
+  <head>
+    <title>PubSub Map</title>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="map-canvas" style="width:1000px;height:600px"></div>
+    </div>
+
+    <script>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key={{ MAPS_KEY }}&callback=initialize"></script>
+  </body>
+</html>
+
